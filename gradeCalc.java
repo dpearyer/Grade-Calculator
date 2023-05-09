@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class GradeCalc{
-    public static void main(String[]args) {
+public class gradeCalc {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter current grade(To the 2 decimals): ");
@@ -11,17 +11,18 @@ public class GradeCalc{
         float goal = input.nextFloat();
 
         float required = mathCalc(current, goal);
-        System.out.println("You will need a "+goal+ " percent on the assignment");
-        
+        System.out.println("You will need a " + goal + " percent on the assignment");
 
     }
-    public static float mathCalc(float current, float goal){
-        float required = (2*goal)-current;
+
+    public static float mathCalc(float current, float goal) {
+        float required = (2 * goal) - current;
         return required;
     }
 }
 
-/*to run do:
+/*
+ * to run do:
  * javac gradeCalc.java
  * then do:
  * java gradeCalc
